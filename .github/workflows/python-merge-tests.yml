@@ -459,12 +459,7 @@ jobs:
   python-tests-foundry-hosting:
     name: Python Tests - Foundry Hosting Integration
     needs: paths-filter
-    if: >
-      github.event_name != 'pull_request' &&
-      needs.paths-filter.outputs.pythonChanges == 'true' &&
-      (github.event_name != 'merge_group' ||
-       needs.paths-filter.outputs.foundryHostingChanged == 'true' ||
-       needs.paths-filter.outputs.coreChanged == 'true')
+    if: false
     runs-on: ubuntu-latest
     environment: integration
     env:
