@@ -32,7 +32,7 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = [
-    "pytest==9.1.1",
+    "pytest==9.2.0",
 ]
 # A2UI (agent-generated UI) support. Optional: the agent_framework_ag_ui._a2ui
 # modules import this lazily, so the base package works without it.
